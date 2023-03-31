@@ -1,0 +1,13 @@
+//5!
+	public static void Facto(int startNumber, int multi) {
+		multi = multi * startNumber;
+		if(startNumber == 1) {
+			System.out.println(multi);
+			return;
+		}
+		startNumber = startNumber - 1;
+		Facto(startNumber, multi);
+	}
+	public static void main(String[] args) {
+		Facto(5,1);
+	
