@@ -1,0 +1,14 @@
+	public static void Fibo(int A1, int B2, int C3) {
+	
+		int res = A1 + B2;
+		C3 = C3 + 1;
+		if( C3 == 9) {
+			System.out.println(res);
+			return;
+		}
+		Fibo(B2, res, C3);
+	}
+	public static void main(String[] args) {
+		
+		Fibo(0,1,0);
+	}
