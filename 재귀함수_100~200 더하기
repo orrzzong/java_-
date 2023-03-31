@@ -1,0 +1,14 @@
+// 100부터 200까지 함수만들기_재귀함수
+public static void Oth(int startNumber, int endNumber, int sum) {
+		sum = sum + startNumber;
+		if(startNumber == endNumber) {
+			System.out.println(sum);
+			return;
+		}
+		startNumber = startNumber + 1;
+		Oth(startNumber, endNumber, sum);
+	}
+	
+	public static void main(String[] args) {
+		Oth(100,200,0);
+	}
